@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscrição - CFITEL</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav container">
+            <div class="nav__logo">
+                <a href="index.html"><img src="img/cfitel.png" alt="CFITEL Logo" class="logo"></a>
+            </div>
+            <ul class="nav__menu" id="nav-menu">
+                <li class="nav__item">
+                    <a href="index.html" class="nav__link">Home</a>
+                </li>
+                <li class="nav__item">
+                    <a href="cursos.html" class="nav__link">Cursos</a>
+                </li>
+                <li class="nav__item">
+                    <a href="index.html#sobre" class="nav__link">Sobre</a>
+                </li>
+                <li class="nav__item">
+                    <a href="index.html#contato" class="nav__link">Contato</a>
+                </li>
+            </ul>
+            <div class="nav__toggle" id="nav-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Registration Section -->
+    <section class="registration">
+        <div class="container">
+            <div class="registration__header">
+                <h1 class="registration__title">Inscreva-se no CFITEL</h1>
+                <p class="registration__subtitle">Preencha o formulário abaixo para se inscrever em nossos cursos</p>
+            </div>
+
+            <div class="registration__container">
+                <div class="registration__form-container">
+                    <form class="registration__form" id="registration-form">
+                        <div class="form__group">
+                            <label for="nome" class="form__label">
+                                <i class="fas fa-user"></i>
+                                Nome Completo *
+                            </label>
+                            <input type="text" id="nome" name="nome" class="form__input" required>
+                        </div>
+
+                        <div class="form__group">
+                            <label for="email" class="form__label">
+                                <i class="fas fa-envelope"></i>
+                                Email *
+                            </label>
+                            <input type="email" id="email" name="email" class="form__input" required>
+                        </div>
+
+                        <div class="form__group">
+                            <label for="telefone" class="form__label">
+                                <i class="fas fa-phone"></i>
+                                Telefone *
+                            </label>
+                            <input type="tel" id="telefone" name="telefone" class="form__input" required>
+                        </div>
+
+                        <div class="form__group">
+                            <label for="curso" class="form__label">
+                                <i class="fas fa-graduation-cap"></i>
+                                Curso de Interesse *
+                            </label>
+                            <select id="curso" name="curso" class="form__select" required>
+                                <option value="">Selecione um curso</option>
+                                <option value="desenvolvimento-web">Desenvolvimento Web Full Stack</option>
+                                <option value="analise-dados">Análise de Dados e Business Intelligence</option>
+                                <option value="ciberseguranca">Cibersegurança e Ethical Hacking</option>
+                                <option value="gestao-projetos">Gestão de Projetos</option>
+                                <option value="marketing-digital">Marketing Digital e Redes Sociais</option>
+                                <option value="ingles-tecnico">Inglês Técnico para TI</option>
+                            </select>
+                        </div>
+
+                        <div class="form__group">
+                            <label for="escolaridade" class="form__label">
+                                <i class="fas fa-book"></i>
+                                Nível de Escolaridade
+                            </label>
+                            <select id="escolaridade" name="escolaridade" class="form__select">
+                                <option value="">Selecione</option>
+                                <option value="ensino-medio">Ensino Médio</option>
+                                <option value="ensino-superior">Ensino Superior</option>
+                                <option value="pos-graduacao">Pós-graduação</option>
+                            </select>
+                        </div>
+
+                        <div class="form__group">
+                            <label for="experiencia" class="form__label">
+                                <i class="fas fa-briefcase"></i>
+                                Experiência Profissional
+                            </label>
+                            <textarea id="experiencia" name="experiencia" class="form__textarea" rows="4"
+                                placeholder="Descreva brevemente sua experiência profissional..."></textarea>
+                        </div>
+
+                        <div class="form__group">
+                            <label for="motivacao" class="form__label">
+                                <i class="fas fa-lightbulb"></i>
+                                Por que deseja fazer este curso?
+                            </label>
+                            <textarea id="motivacao" name="motivacao" class="form__textarea" rows="4"
+                                placeholder="Conte-nos sobre suas motivações e objetivos..."></textarea>
+                        </div>
+
+                        <div class="form__group form__checkbox">
+                            <input type="checkbox" id="termos" name="termos" required>
+                            <label for="termos" class="form__checkbox-label">
+                                Concordo com os <a href="#" class="form__link">termos e condições</a> e autorizo o uso
+                                dos meus dados para fins educacionais. *
+                            </label>
+                        </div>
+
+                        <div class="form__group form__checkbox">
+                            <input type="checkbox" id="newsletter" name="newsletter">
+                            <label for="newsletter" class="form__checkbox-label">
+                                Desejo receber informações sobre novos cursos e eventos por email.
+                            </label>
+                        </div>
+
+                        <button type="submit" class="btn btn--primary btn--full">
+                            <i class="fas fa-paper-plane"></i>
+                            Enviar Inscrição
+                        </button>
+                    </form>
+                </div>
+
+                <div class="registration__info">
+                    <div class="info__card">
+                        <div class="info__icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <h3>Processo Rápido</h3>
+                        <p>Sua inscrição será processada em até 24 horas úteis.</p>
+                    </div>
+
+                    <div class="info__card">
+                        <div class="info__icon">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <h3>Suporte Personalizado</h3>
+                        <p>Nossa equipe entrará em contato para esclarecer dúvidas.</p>
+                    </div>
+
+                    <div class="info__card">
+                        <div class="info__icon">
+                            <i class="fas fa-certificate"></i>
+                        </div>
+                        <h3>Certificação Reconhecida</h3>
+                        <p>Receba certificado reconhecido no mercado de trabalho.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__container">
+                <div class="footer__content">
+                    <div class="footer__section">
+                        <img src="img/cfitel.png" alt="CFITEL Logo" class="footer__logo">
+                        <p class="footer__description">
+                            Centro de Formação do ITEL - Transformando vidas através da educação profissional de
+                            qualidade.
+                        </p>
+                        <div class="footer__social">
+                            <a href="#" class="footer__social-link">
+                                <i class="fab fa-facebook"></i>
+                            </a>
+                            <a href="#" class="footer__social-link">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="#" class="footer__social-link">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                            <a href="#" class="footer__social-link">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="footer__section">
+                        <h4 class="footer__title">Links Rápidos</h4>
+                        <ul class="footer__links">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="cursos.html">Cursos</a></li>
+                            <li><a href="index.html#sobre">Sobre</a></li>
+                            <li><a href="index.html#contato">Contato</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__section">
+                        <h4 class="footer__title">Contato</h4>
+                        <div class="footer__contact">
+                            <p><i class="fas fa-map-marker-alt"></i> Rua Principal, 123, Luanda</p>
+                            <p><i class="fas fa-phone"></i> +244 923 456 789</p>
+                            <p><i class="fas fa-envelope"></i> info@cfitel.ao</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__bottom">
+                    <p>&copy; 2024 CFITEL. Todos os direitos reservados.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Success Modal -->
+    <div class="modal" id="success-modal">
+        <div class="modal__content">
+            <div class="modal__header">
+                <i class="fas fa-check-circle"></i>
+                <h3>Inscrição Enviada com Sucesso!</h3>
+            </div>
+            <div class="modal__body">
+                <p>Obrigado por se inscrever no CFITEL. Entraremos em contato em breve para confirmar sua inscrição e
+                    fornecer mais informações sobre o curso.</p>
+            </div>
+            <div class="modal__footer">
+                <button class="btn btn--primary" onclick="closeModal()">Fechar</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

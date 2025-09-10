@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notícias - CFITEL</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav container">
+            <div class="nav__logo">
+                <img src="img/cfitel.png" alt="CFITEL Logo" class="logo">
+            </div>
+            <ul class="nav__menu" id="nav-menu">
+                <li class="nav__item">
+                    <a href="index.html" class="nav__link">Home</a>
+                </li>
+                <li class="nav__item">
+                    <a href="cursos.html" class="nav__link">Cursos</a>
+                </li>
+                <li class="nav__item">
+                    <a href="noticias.html" class="nav__link active">Notícias</a>
+                </li>
+                <li class="nav__item">
+                    <a href="index.html#sobre" class="nav__link">Sobre</a>
+                </li>
+                <li class="nav__item">
+                    <a href="index.html#contato" class="nav__link">Contato</a>
+                </li>
+            </ul>
+            <div class="nav__toggle" id="nav-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1 class="page-header__title">Notícias e Novidades</h1>
+            <p class="page-header__subtitle">Fique por dentro de tudo que acontece no CFITEL</p>
+        </div>
+    </section>
+
+    <!-- News Categories -->
+    <section class="news-categories">
+        <div class="container">
+            <div class="categories__filter">
+                <button class="category-btn active" data-category="all">Todas</button>
+                <button class="category-btn" data-category="bootcamp">Bootcamps</button>
+                <button class="category-btn" data-category="formatura">Formaturas</button>
+                <button class="category-btn" data-category="evento">Eventos</button>
+                <button class="category-btn" data-category="parceria">Parcerias</button>
+                <button class="category-btn" data-category="sucesso">Casos de Sucesso</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured News -->
+    <section class="featured-news">
+        <div class="container">
+            <article class="featured-article">
+                <div class="featured-article__image">
+                    <img src="img/web.png" alt="Bootcamp Intensivo 2024">
+                    <div class="featured-article__overlay">
+                        <div class="featured-article__category">Bootcamp</div>
+                    </div>
+                </div>
+                <div class="featured-article__content">
+                    <div class="featured-article__meta">
+                        <span class="featured-article__date">
+                            <i class="fas fa-calendar"></i> 15 Janeiro 2024
+                        </span>
+                        <span class="featured-article__author">
+                            <i class="fas fa-user"></i> Equipe CFITEL
+                        </span>
+                        <span class="featured-article__views">
+                            <i class="fas fa-eye"></i> 1.2k visualizações
+                        </span>
+                    </div>
+                    <h2 class="featured-article__title">
+                        Bootcamp Intensivo de Desenvolvimento Web 2024 - Transforme sua Carreira em 12 Semanas
+                    </h2>
+                    <p class="featured-article__excerpt">
+                        Está pronto para uma transformação completa na sua carreira? Nosso Bootcamp Intensivo de Desenvolvimento Web 2024 é a oportunidade que você estava esperando. Em apenas 12 semanas, você sairá preparado para enfrentar os desafios do mercado de tecnologia com confiança e competência.
+                    </p>
+                    <a href="noticia-detalhes.html?id=bootcamp-dev-2024" class="btn btn--primary">
+                        <i class="fas fa-arrow-right"></i>
+                        Leia a Matéria Completa
+                    </a>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- News Grid -->
+    <section class="news-grid-section">
+        <div class="container">
+            <div class="news__grid" id="news-grid">
+                <!-- Bootcamp News -->
+                <article class="news-card" data-category="bootcamp">
+                    <div class="news-card__image">
+                        <img src="img/boot-data-science.svg" alt="Bootcamp Data Science">
+                        <div class="news-card__category">Bootcamp</div>
+                    </div>
+                    <div class="news-card__content">
+                        <div class="news-card__meta">
+                            <span class="news-card__date">
+                                <i class="fas fa-calendar"></i> 12 Jan 2024
+                            </span>
+                        </div>
+                        <h3 class="news-card__title">
+                            <a href="noticia-detalhes.html?id=bootcamp-data-science">
+                                Novo Bootcamp de Data Science: Vagas Limitadas
+                            </a>
+                        </h3>
+                        <p class="news-card__excerpt">
+                            Aprenda Python, Machine Learning e Big Data em 16 semanas intensivas. Metodologia prática com projetos reais do mercado.
+                        </p>
+                        <div class="news-card__tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">ML</span>
+                            <span class="tag">Big Data</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Graduation News -->
+                <article class="news-card" data-category="formatura">
+                    <div class="news-card__image">
+                        <img src="img/turma-formada1.jpg" alt="Formatura Turma 2023">
+                        <div class="news-card__category">Formatura</div>
+                    </div>
+                    <div class="news-card__content">
+                        <div class="news-card__meta">
+                            <span class="news-card__date">
+                                <i class="fas fa-calendar"></i> 10 Jan 2024
+                            </span>
+                        </div>
+                        <h3 class="news-card__title">
+                            <a href="noticia-detalhes.html?id=formatura-analise-dados">
+                                Parabéns à Turma de Análise de Dados 2023!
+                            </a>
+                        </h3>
+                        <p class="news-card__excerpt">
+                            25 novos profissionais se formaram em nosso curso de Análise de Dados. Taxa de empregabilidade de 96% em menos de 3 meses.
+                        </p>
+                        <div class="news-card__stats">
+                            <span class="stat">
+                                <i class="fas fa-users"></i> 25 formados
+                            </span>
+                            <span class="stat">
+                                <i class="fas fa-briefcase"></i> 96% empregados
+                            </span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Event News -->
+                <article class="news-card" data-category="evento">
+                    <div class="news-card__image">
+                        <img src="img/talk-ia.jpg" alt="Tech Talk IA">
+                        <div class="news-card__category">Evento</div>
+                    </div>
+                    <div class="news-card__content">
+                        <div class="news-card__meta">
+                            <span class="news-card__date">
+                                <i class="fas fa-calendar"></i> 8 Jan 2024
+                            </span>
+                        </div>
+                        <h3 class="news-card__title">
+                            <a href="noticia-detalhes.html?id=tech-talk-ia">
+                                Tech Talk: O Futuro da Inteligência Artificial
+                            </a>
+                        </h3>
+                        <p class="news-card__excerpt">
+                            Evento gratuito com especialistas da área. Descubra as tendências em IA e como se preparar para o futuro.
+                        </p>
+                        <div class="news-card__event-info">
+                            <span class="event-date">
+                                <i class="fas fa-calendar-alt"></i> 25 Jan, 19h
+                            </span>
+                            <span class="event-location">
+                                <i class="fas fa-map-marker-alt"></i> Online
+                            </span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Partnership News -->
+                <article class="news-card" data-category="parceria">
+                    <div class="news-card__image">
+                        <img src="img/parcerias.png" alt="Parceria Empresarial">
+                        <div class="news-card__category">Parceria</div>
+                    </div>
+                    <div class="news-card__content">
+                        <div class="news-card__meta">
+                            <span class="news-card__date">
+                                <i class="fas fa-calendar"></i> 5 Jan 2024
+                            </span>
+                        </div>
+                        <h3 class="news-card__title">
+                            <a href="noticia-detalhes.html?id=parceria-tech-companies">
+                                CFITEL Firma Parceria com Grandes Empresas de TI
+                            </a>
+                        </h3>
+                        <p class="news-card__excerpt">
+                            Novas oportunidades de estágio e emprego para nossos alunos através de parcerias estratégicas com líderes do mercado.
+                        </p>
+                        <div class="news-card__companies">
+                            <span class="company">TechCorp</span>
+                            <span class="company">DataSoft</span>
+                            <span class="company">InnovaTech</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Success Story -->
+                <article class="news-card" data-category="sucesso">
+                    <div class="news-card__image">
+                        <img src="img/student.jpg" alt="Caso de Sucesso">
+                        <div class="news-card__category">Sucesso</div>
+                    </div>
+                    <div class="news-card__content">
+                        <div class="news-card__meta">
+                            <span class="news-card__date">
+                                <i class="fas fa-calendar"></i> 3 Jan 2024
+                            </span>
+                        </div>
+                        <h3 class="news-card__title">
+                            <a href="noticia-detalhes.html?id=sucesso-maria-silva">
+                                De Estudante a Tech Lead: A História de Maria Silva
+                            </a>
+                        </h3>
+                        <p class="news-card__excerpt">
+                            Ex-aluna do CFITEL conta como conseguiu uma promoção para Tech Lead em apenas 8 meses após a formatura.
+                        </p>
+                        <div class="news-card__achievement">
+                            <span class="achievement">
+                                <i class="fas fa-trophy"></i> Tech Lead em 8 meses
+                            </span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Bootcamp Cybersecurity -->
+                <article class="news-card" data-category="bootcamp">
+                    <div class="news-card__image">
+                        <img src="img/cybersecurity.webp" alt="Bootcamp Cibersegurança">
+                        <div class="news-card__category">Bootcamp</div>
+                    </div>
+                    <div class="news-card__content">
+                        <div class="news-card__meta">
+                            <span class="news-card__date">
+                                <i class="fas fa-calendar"></i> 1 Jan 2024
+                            </span>
+                        </div>
+                        <h3 class="news-card__title">
+                            <a href="noticia-detalhes.html?id=bootcamp-cybersecurity">
+                                Bootcamp de Cibersegurança: Proteja o Futuro Digital
+                            </a>
+                        </h3>
+                        <p class="news-card__excerpt">
+                            Torne-se um especialista em segurança digital. Curso intensivo com certificações internacionais incluídas.
+                        </p>
+                        <div class="news-card__certifications">
+                            <span class="cert">CEH</span>
+                            <span class="cert">CISSP</span>
+                            <span class="cert">CompTIA</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <!-- Load More Button -->
+            <div class="news__load-more">
+                <button class="btn btn--secondary" id="load-more-btn">
+                    <i class="fas fa-plus"></i>
+                    Carregar Mais Notícias
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Subscription -->
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter__content">
+                <div class="newsletter__info">
+                    <h3 class="newsletter__title">
+                        <i class="fas fa-envelope"></i>
+                        Receba Nossas Novidades
+                    </h3>
+                    <p class="newsletter__description">
+                        Seja o primeiro a saber sobre novos cursos, bootcamps e oportunidades no CFITEL.
+                    </p>
+                </div>
+                <form class="newsletter__form" id="newsletter-form">
+                    <div class="newsletter__input-group">
+                        <input type="email" placeholder="Seu melhor email" class="newsletter__input" required>
+                        <button type="submit" class="btn btn--primary">
+                            <i class="fas fa-paper-plane"></i>
+                            Inscrever-se
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__container">
+                <div class="footer__content">
+                    <div class="footer__section">
+                        <img src="/placeholder.svg?height=40&width=120" alt="CFITEL Logo" class="footer__logo">
+                        <p class="footer__description">
+                            Centro de Formação do ITEL - Transformando vidas através da educação profissional de qualidade.
+                        </p>
+                        <div class="footer__social">
+                            <a href="#" class="footer__social-link">
+                                <i class="fab fa-facebook"></i>
+                            </a>
+                            <a href="#" class="footer__social-link">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="#" class="footer__social-link">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                            <a href="#" class="footer__social-link">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="footer__section">
+                        <h4 class="footer__title">Links Rápidos</h4>
+                        <ul class="footer__links">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="cursos.html">Cursos</a></li>
+                            <li><a href="noticias.html">Notícias</a></li>
+                            <li><a href="index.html#sobre">Sobre</a></li>
+                            <li><a href="index.html#contato">Contato</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__section">
+                        <h4 class="footer__title">Contato</h4>
+                        <div class="footer__contact">
+                            <p><i class="fas fa-map-marker-alt"></i> Rua Principal, 123, Luanda</p>
+                            <p><i class="fas fa-phone"></i> +244 923 456 789</p>
+                            <p><i class="fas fa-envelope"></i> info@cfitel.ao</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__bottom">
+                    <p>&copy; 2024 CFITEL. Todos os direitos reservados.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
